@@ -1,0 +1,34 @@
+ .button, #red-crystal {
+      width: 100px;
+      height: 100px;
+      background-color: red;
+    }
+  .button, #blue-crystal {
+  	  width: 100px;
+      height: 100px;
+      background-color: blue;
+  }
+
+  .button, #green-crystal {
+  	  width: 100px;
+      height: 100px;
+      background-color: green;
+  }
+
+  .button, #yellow-crystal {
+  	  width: 100px;
+      height: 100px;
+      background-color: yellow;
+  }
+  #randomNumber {
+  	width: 175px;
+  	height: 50px;
+  	background-color: gray;
+  }
+
+   #playersTotalScore {
+  	width: 175px;
+  	height: 50px;
+  	background-color: gray;
+
+  }
