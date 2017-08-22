@@ -2,18 +2,24 @@
 <html>
 <head>
 	<title>Crystals Collector Game</title>
+	<link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
 <body>
- <h1>Number to Guess: <span id="number-to-guess"></span></h1>
+ <h1>Crystal Collector Game <span id="number-to-guess"></span></h1>
   <!-- Note that this div is now empty. We will fill it dynamically -->
   <div id="instructions">
   <h3>How to Play:</h3>
-  	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi pellentesque vulputate ornare. Ut sed lorem semper, rhoncus dui vel, cursus ipsum</p>
-  	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi pellentesque vulputate ornare. Ut sed lorem semper, rhoncus dui vel, cursus ipsum</p>
-  
-  </div>
+  	<p>You will be given a random number at the start of the game.</p><p>There are four crystals below. By clicking on a crystal you will </br>  a specific amount of points to your total score.</p><p>You win the game by matching your total score to the random</br> number.</p><p>The value of each crystal is hidden from you until you click on it.</p><p>Each time the game starts, the game will change the values of each</br> crystal.
+  	</p>
+    </div>
+
+    <div id="wins-losses-box">
+    	<p id="wins">Wins:</p> 
+    	<p id="losses">Losses:</p>
+
+    </div>
   
   <div id="randomNumber"><p>Match this number: </p>
   	<!--"Guess this number" to go in this div" -->
@@ -26,8 +32,13 @@
   	<button type="button" id="yellow-crystal"></button>
 
   </div>
+
+  <div>
+  <p id="your-score">Your score is:</p>
+  </div>
+
   <div id="playersTotalScore">
-  	
+  	<p></p>
   </div>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>

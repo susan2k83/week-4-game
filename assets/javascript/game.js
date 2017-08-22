@@ -37,11 +37,14 @@ $("#red-crystal").on("click", function() {
 	//add the value of the red crystal to the total
 	//show the new total to the user
 	playersTotalScore = playersTotalScore + red;
-     $("#playersTotalScore").text("Your points so far: " + playersTotalScore);
+     $("#playersTotalScore").text( playersTotalScore);
  	if (playersTotalScore === randomNumber) {
 		alert("You win!");
+
+		
 	} else if(playersTotalScore > randomNumber) {
 		alert("You lose");
+		
 	}
 });
 
@@ -51,7 +54,7 @@ $("#blue-crystal").on("click", function() {
 	//add the value of the red crystal to the total
 	//show the new total to the user
 	playersTotalScore = playersTotalScore + blue;
-	$("#playersTotalScore").text("Your points so far: " + playersTotalScore);
+	$("#playersTotalScore").text( playersTotalScore);
 	if (playersTotalScore === randomNumber) {
 		alert("You win!");
 	} else if(playersTotalScore > randomNumber) {
@@ -65,7 +68,7 @@ $("#yellow-crystal").on("click", function() {
 	//add the value of the red crystal to the total
 	//show the new total to the user
 	playersTotalScore = playersTotalScore + yellow;
-	$("#playersTotalScore").text("Your points so far: " + playersTotalScore);
+	$("#playersTotalScore").text( + playersTotalScore);
 	if (playersTotalScore === randomNumber) {
 		alert("You win!");
 	} else if(playersTotalScore > randomNumber) {
@@ -78,7 +81,7 @@ $("#green-crystal").on("click", function() {
 	//add the value of the red crystal to the total
 	//show the new total to the user
 	playersTotalScore = playersTotalScore + green;
-	$("#playersTotalScore").text("Your points so far: " + playersTotalScore);
+	$("#playersTotalScore").text( + playersTotalScore);
 
 	if (playersTotalScore === randomNumber) {
 		alert("You win!");
@@ -88,19 +91,19 @@ $("#green-crystal").on("click", function() {
 
 });
 
+// tried to create a function to add up and display each time the player wins or loses
+ function wins () {
 
+ 	var wins = playersTotalScore === randomNumber;
+ 	wins = wins + 1
 
+    $("#wins").text("wins++");
+ };
+function losses () {
+	var losses = playersTotalScore > randomNumber;
+	losses = losses - 1
+	$("#losses").text("losses--");
+};
 
-
-// to reset game :
-
-function resetGame () {
-	total = 0;
-	console.log("you win");
-}
-
-
-
-// each crystal needs a value between 1 and 12, that will be hidden. 
-// When user clicks each cystal the playersTotalScore will increase by whatever value the crystal is worth
 });
+
